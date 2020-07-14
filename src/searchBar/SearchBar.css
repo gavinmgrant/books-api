@@ -1,11 +1,19 @@
 input {
     padding: 10px;
+    margin-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }
 
 .searchBar {
     background-color: gray;
-    height: 40px;
+    height: 45px;
     padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.searchBarInput {
+    width: 50%;
 }
 
 .typeOptions {
@@ -13,10 +21,12 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 40px;
+    height: 45px;
     padding: 20px;
 }
 
 label, select {
     padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }

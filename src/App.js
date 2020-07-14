@@ -97,7 +97,7 @@ class App extends Component {
       <main className='App'>
         <h1
           className='mainHeader'>
-          Google Book Search
+          Google Books Search
         </h1>
           <SearchBar 
             selectOptions={selectOptions}
