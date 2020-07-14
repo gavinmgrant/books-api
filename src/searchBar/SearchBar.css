@@ -1,9 +1,22 @@
+input {
+    padding: 10px;
+}
+
 .searchBar {
     background-color: gray;
     height: 40px;
     padding: 20px;
 }
 
-input {
+.typeOptions {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    padding: 20px;
+}
+
+label, select {
     padding: 10px;
 }

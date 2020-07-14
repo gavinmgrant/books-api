@@ -15,15 +15,15 @@ class App extends Component {
     }
   }
 
-  setPrintSelected(sel) {
+  setPrintSelected(printType) {
     this.setState({
-      printType: sel
+      printType
     });
   }
 
-  setBookSelected(sel) {
+  setBookSelected(bookType) {
     this.setState({
-      bookType: sel
+      bookType
     });
   }
 
@@ -101,8 +101,8 @@ class App extends Component {
         </h1>
           <SearchBar 
             selectOptions={selectOptions}
-            printChangeHandler={sel => this.setPrintSelected(sel)}
-            bookChangeHandler={sel => this.setBookSelected(sel)}
+            printChangeHandler={printType => this.setPrintSelected(printType)}
+            bookChangeHandler={bookType => this.setBookSelected(bookType)}
             handleSubmit={e => this.handleSubmit(e)}
             handleUpdate={term => this.updateSearchTerm(term)}
           />

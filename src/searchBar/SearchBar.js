@@ -19,16 +19,18 @@ class SearchBar extends Component {
                     />
                     <input type='submit' value="Submit" />
                 </form>
-                <label htmlFor="printType">Print Type:</label>
-                    <PrintType
-                        selectOptions={this.props.selectOptions}
-                        printChangeHandler={this.props.printChangeHandler}
-                    />
-                <label htmlFor="bookType">Book Type:</label>
-                    <BookType
-                        selectOptions={this.props.selectOptions}
-                        bookChangeHandler={this.props.bookChangeHandler}
-                    />
+                <div className='typeOptions'>
+                    <label htmlFor="printType">Print Type:</label>
+                        <PrintType
+                            selectOptions={this.props.selectOptions}
+                            printChangeHandler={this.props.printChangeHandler}
+                        />
+                    <label htmlFor="bookType">Book Type:</label>
+                        <BookType
+                            selectOptions={this.props.selectOptions}
+                            bookChangeHandler={this.props.bookChangeHandler}
+                        />
+                </div>
             </div>
         );
     }

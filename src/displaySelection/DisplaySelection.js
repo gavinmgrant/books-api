@@ -4,8 +4,8 @@ export default function DisplaySelection(props) {
     return (
         <select
             onChange={
-                (sel => props.printChangeHandler(sel.target.value)) ||
-                (sel => props.bookChangeHandler(sel.target.value))
+                (printType => props.printChangeHandler(printType.target.value)) ||
+                (bookType => props.bookChangeHandler(bookType.target.value))
             }
         >
             {props.bookOptions} 
