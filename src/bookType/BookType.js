@@ -14,7 +14,7 @@ class BookType extends Component {
       <div>
         <DisplaySelection
           bookOptions={bookOptions}
-          bookChangeHandler={this.props.bookChangeHandler}
+          changeHandler={this.props.bookChangeHandler}
         />
       </div>
     );

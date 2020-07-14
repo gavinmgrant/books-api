@@ -14,7 +14,7 @@ class PrintType extends Component {
       <div>
         <DisplaySelection
           printOptions={printOptions}
-          printChangeHandler={this.props.printChangeHandler}
+          changeHandler={this.props.printChangeHandler}
         />
       </div>
     );

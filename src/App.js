@@ -39,16 +39,16 @@ class App extends Component {
 
       //Create a query string for search term
       const urlBase = 'https://www.googleapis.com/books/v1/volumes';
-      const apiKey = 'AIzaSyCNJ_9I2iggqIy-b9i1Nwm63-vMU6eyaGQ';
+      const apiKey = '&key=AIzaSyCNJ_9I2iggqIy-b9i1Nwm63-vMU6eyaGQ';
       
-      let printType = this.state.printType;
+      let printType = '&printType=' + this.state.printType;
       let filter = 
         this.state.bookType !== 'no-filter'
-          ? this.state.bookType
+          ? '&filter=' + this.state.bookType
           : "";
-      let searchTerm = this.state.searchTerm;
+      let searchTerm = '?q=' + this.state.searchTerm;
 
-      const queryString = urlBase + '?q=' + searchTerm + '&' + filter + '&' + printType + '&key=' + apiKey
+      const queryString = urlBase + searchTerm + filter + printType + apiKey
 
       console.log(queryString);
 
